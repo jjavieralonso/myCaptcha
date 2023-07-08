@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Captcha</title>
+</head>
+
+<body>
+    <div id="captcha-container">
+        <p class="captcha">Ingresa el siguiente CAPTCHA:</p>
+        <p id="captcha-text"></p> 
+        <input type="text" id="answer" required>
+        <button type="button" onclick="validateAnswer()">Enviar</button>
+    </div>
+    <div class="loader" id="loader" style="display: none;">
+        <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+
+    <script src="captcha.js"></script>
+</body>
+
+</html>
